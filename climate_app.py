@@ -12,15 +12,14 @@ Base = automap_base()
 Base.prepare(engine, reflect=True)
 Station = Base.classes.station
 
+last_data_point = dt.date(2017, 8, 23)
+year_from_last = last_data_point - dt.timedelta(days=365)
+
 Measurement = Base.classes.measurement
 Station = Base.classes.station
 session_factory = sessionmaker(bind=engine)
 session = scoped_session(session_factory)
-
 app = Flask(__name__)
-
-last_data_point = dt.date(2017, 8, 23)
-year_from_last = last_data_point - dt.timedelta(days=365)
 
 @app.route("/")
 def index():
@@ -59,7 +58,7 @@ def tobs():
 @app.route("/api/v1.0/temp/<start>/<end>")
 def calc_temps(start, end):
     """TMIN, TAVG, and TMAX for a list of dates.
-    
+
     Args:
         start_date (string): A date string in the format %Y-%m-%d
         end_date (string): A date string in the format %Y-%m-%d

@@ -4,12 +4,12 @@
 
 Congratulations! You've decided to treat yourself to a long holiday vacation in Honolulu, Hawaii! To help with your trip planning, you need to do some climate analysis on the area.
 
-# Summary (with links to my code and results)
+## Summary (with links to my code and results)
  
 * Use Python (Pandas) and SQLAlchemy ORM queries to reflect tables into a new [model](/Climate_Analysis.ipynb) and perform analysis of Hawaii climate (code snippet below). 
 * Next, build a [Flask app](/climate_app.py) using the developed queries. Ensure the application has a [dynamic route](Images/Dynamic_Route.png) for the calc_temps function that can handle missing end dates from user input.
 
-![Code_Snippet](Images/Code_Snippet.png)
+![Code_Snippet](Images/Code_Snippet3.png)
 
 ## Climate Analysis and Exploration
 
