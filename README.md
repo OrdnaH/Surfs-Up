@@ -13,7 +13,7 @@ Congratulations! You've decided to treat yourself to a long holiday vacation in 
 
 ## Climate Analysis and Exploration
 
-* Use the [hawaii.sqlite](Resources/hawaii.sqlite) file to begin the climate analysis and data exploration.
+* Use the [hawaii.sqlite](Resources/hawaii.sqlite) database file to begin the climate analysis and data exploration.
 
 * Choose a start date and end date for your trip. Make sure that your vacation range is approximately 3-15 days total.  
 
